@@ -46,32 +46,32 @@ declare namespace mongoose_delete {
         /**
          * Delete documents by conditions
          */
-        delete(conditions?: any, deleteBy?: any, fn?: Callback<T, this>): mongoose.Query<T> & QueryHelpers;
+        // delete(conditions?: any, deleteBy?: any, fn?: Callback<T, this>): mongoose.Query<T> & QueryHelpers;
 
         /**
          * Restore documents by conditions
          */
-        restore(conditions?: any, fn?: Callback<T, this>): mongoose.Query<T> & QueryHelpers;
+        // restore(conditions?: any, fn?: Callback<T, this>): mongoose.Query<T> & QueryHelpers;
 
         /**
          * Delete a document by ID
          */
-        deleteById(
-            id?: string | mongoose.Types.ObjectId | Callback<T, this>,
-            deleteBy?: string | mongoose.Types.ObjectId | mongoose.Document | Callback<T, this>,
-            fn?: Callback<T, this>,
-        ): mongoose.Query<T> & QueryHelpers;
+        // deleteById(
+        //     id?: string | mongoose.Types.ObjectId | Callback<T, this>,
+        //     deleteBy?: string | mongoose.Types.ObjectId | mongoose.Document | Callback<T, this>,
+        //     fn?: Callback<T, this>,
+        // ): mongoose.Query<T> & QueryHelpers;
     }
 
     interface SoftDeleteDocument
         extends mongoose.Document,
         SoftDeleteInterface {
         /** Soft delete this document */
-        delete(
-            deleteBy?: string | mongoose.Types.ObjectId | Callback<this>,
-            fn?: Callback<this>,
-        ): Promise<this>;
-        restore(fn?: Callback<this>): Promise<this>;
+        // delete(
+        //     deleteBy?: string | mongoose.Types.ObjectId | Callback<this>,
+        //     fn?: Callback<this>,
+        // ): Promise<this>;
+        // restore(fn?: Callback<this>): Promise<this>;
     }
     interface SoftDeleteInterface {
         /** Soft deleted ? */
