@@ -1,10 +1,13 @@
 // Type definitions for mongoose-delete 0.5
+// WARNING!!! These typings have been modified just to get the code working with 5.12 while matching the implementation being used.
+// WARMING!!! These typings do NOT cover mongoose-delete correctly in all use cases
 // Project: https://github.com/dsanel/mongoose-delete
 // Definitions by: Mochamad Arifin <https://github.com/ndunks>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 3.2
 
 import mongoose = require('mongoose');
+import {Document, Model} from "mongoose";
 
 /**
  * This is interface helper to declaring model that using Soft Delete
@@ -71,7 +74,7 @@ declare namespace mongoose_delete {
         //     deleteBy?: string | mongoose.Types.ObjectId | Callback<this>,
         //     fn?: Callback<this>,
         // ): Promise<this>;
-        // restore(fn?: Callback<this>): Promise<this>;
+        restore(fn?: Callback<this>): Promise<this>;
     }
     interface SoftDeleteInterface {
         /** Soft deleted ? */
@@ -101,5 +104,5 @@ interface Options {
     deletedByType: any;
 }
 
-declare function mongoose_delete(schema: mongoose.Schema, options?: Partial<Options>): void;
+declare function mongoose_delete<DocType = Document, M extends Model<DocType, any, any> = Model<any, any, any>, SchemaDefinitionType = undefined>(schema: mongoose.Schema<DocType, M, SchemaDefinitionType>, options?: Partial<Options>): void;
 export = mongoose_delete;
