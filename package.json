@@ -1,32 +1,4 @@
 {
-  "_from": "@types/mongoose-delete",
-  "_id": "@types/mongoose-delete@0.5.3",
-  "_inBundle": false,
-  "_integrity": "sha512-N0rkFv6+UrjimW+f81AfyTxQDZrce0Tg/JJqUVDvR2fQYbuF980qXBUlyIySC5ijzhej9P17sgxKc+Pp+3YwJg==",
-  "_location": "/@types/mongoose-delete",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "@types/mongoose-delete",
-    "name": "@types/mongoose-delete",
-    "escapedName": "@types%2fmongoose-delete",
-    "scope": "@types",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#DEV:/",
-    "#USER"
-  ],
-  "_resolved": "https://npmjs.ivengi.io/@types%2fmongoose-delete/-/mongoose-delete-0.5.3.tgz",
-  "_shasum": "95e2ef549aaae3b620937f1a982ea3af68b41534",
-  "_spec": "@types/mongoose-delete",
-  "_where": "C:\\development\\projects\\easyfunders\\backoffice-api",
-  "bugs": {
-    "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/issues"
-  },
   "bundleDependencies": false,
   "contributors": [
     {
@@ -38,16 +10,11 @@
     "@types/mongoose": "5.10.5"
   },
   "deprecated": false,
-  "description": "TypeScript definitions for mongoose-delete",
+  "description": "TypeScript definitions for mongoose-delete - TEMPORARY MODIFIED, REVERT TO THE HOMEPAGE TO GET THE ORIGINAL TYPINGS!",
   "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/mongoose-delete",
   "license": "MIT",
   "main": "",
   "name": "@types/mongoose-delete",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DefinitelyTyped/DefinitelyTyped.git",
-    "directory": "types/mongoose-delete"
-  },
   "scripts": {},
   "typeScriptVersion": "3.6",
   "types": "index.d.ts",
