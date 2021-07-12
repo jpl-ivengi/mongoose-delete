@@ -6,9 +6,6 @@
       "url": "https://github.com/ndunks"
     }
   ],
-  "dependencies": {
-    "@types/mongoose": "5.10.5"
-  },
   "deprecated": false,
   "description": "TypeScript definitions for mongoose-delete - TEMPORARY MODIFIED, REVERT TO THE HOMEPAGE TO GET THE ORIGINAL TYPINGS!",
   "homepage": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/mongoose-delete",
